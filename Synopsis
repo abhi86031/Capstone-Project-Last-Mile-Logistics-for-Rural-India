@@ -1,0 +1,29 @@
+Last Mile Logistics Optimization for Rural India
+**Author:** Abhinav Kumar
+
+Overview
+This project explores how deliveries to remote villages in rural India can be made faster and cheaper. Using Odisha’s Ganjam district as an example, data analysis and mapping tools were used to design the most efficient delivery routes between villages. The project demonstrates how modern technology can help logistics companies reach villages even where roads and infrastructure are limited.
+
+
+Why It Matters
+Most of rural India still faces high delivery costs and long waiting times for goods. By finding smarter ways to plan delivery routes, we can make essential products more affordable and accessible to people in small villages. This also helps local businesses connect with larger markets.
+
+
+What We Did
+1. Collected village location data from open sources.
+2. Focused on Ganjam district in Odisha.
+3. Used mathematical models to group nearby villages together.
+4. Created computer-generated maps showing possible delivery routes.
+5. Estimated total travel distance and time for each route.
+
+
+What We Found
+The model successfully grouped villages into delivery clusters and created routes that were much shorter than the traditional ‘one-route-per-village’ approach. The total travel distance could be reduced by about 30%, showing that better planning can lead to lower costs and quicker delivery.
+
+
+What’s Next
+The same method can be applied to other districts across India. In the future, real delivery data from logistics companies can be used to further improve accuracy. The project could also be integrated with road maps and live traffic data to create a fully automated delivery planning system.
+
+
+Conclusion
+Even though rural delivery is difficult, this project proves that with the right data and tools, it is possible to make logistics faster, cheaper, and more reliable — helping both people and businesses in rural India.
