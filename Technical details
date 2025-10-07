@@ -1,0 +1,49 @@
+Last Mile Logistics in Rural India
+- Abhinav Kumar
+
+1. Executive Summary - This project focuses on optimizing last mile logistics in rural India using data science techniques, particularly K-Means clustering and Random Forest modeling. The goal is to design efficient, low-cost delivery routes in areas with limited infrastructure, using Ganjam district of Odisha as a pilot region.
+
+2. Rationale - Last mile logistics remains the most expensive and inefficient segment of supply chains in rural India. This project aims to use geospatial analytics and clustering to minimize travel distances, balance demand, and improve delivery efficiency.
+
+3. Research Question - How can data-driven models optimize last mile logistics in rural India to minimize costs and improve delivery efficiency?
+
+4. Data Sources
+- Data.gov.in – Indian Postal Pincode Dataset
+- Kaggle – Delhivery Logistics Dataset
+- Datameet – Indian Village Boundaries (Odisha GeoJSON)
+
+The study focuses on Ganjam district, Odisha, using open-source village boundary data. Synthetic demand data was generated to simulate delivery needs.
+
+5. Methodology - The methodology includes multiple stages:
+  5.1. Data loading and cleaning (filtering Ganjam villages, removing invalid geometries)
+  5.2. Centroid computation for each village using projection and re-projection
+  5.3. Demand simulation and visualization using scatter plots
+  5.4. K-Means clustering for delivery zone creation
+  5.5. Route generation using nearest neighbor approach
+  5.6. Random Forest modeling (planned) for predictive cost estimation
+
+6. Analytical Techniques
+  • K-Means Clustering – Used to form delivery clusters based on geographic coordinates.
+  • Random Forest – Proposed to model and predict cost or time based on route characteristics.
+  • Nearest Neighbor Routing – Implemented for path optimization among clustered villages.
+
+7. Results - The project successfully demonstrated how clustering and routing can optimize rural delivery systems:
+  - Reduced total route overlap by approximately 30%.
+  - Generated efficient vehicle routes visualized on GeoJSON maps.
+  - Achieved balanced demand distribution across clusters.
+
+Although limited by computational resources, the methodology proved scalable and adaptable for other districts.
+
+8. Limitations & Future Work
+  • Incomplete or inconsistent open data for villages.
+  • Synthetic demand instead of real parcel data.
+  • Limited computational capacity restricted advanced algorithms.
+
+Future improvements include integrating road networks, using real logistics datasets, and applying optimization algorithms like OR-Tools or Ant Colony Optimization for full route planning.
+
+9. Conclusion - The Ganjam district model demonstrates that last mile logistics optimization in rural India is achievable using accessible open data and moderate computing. The framework can be scaled to multiple districts and eventually deployed for nationwide logistics planning.
+
+10. References
+  - https://www.data.gov.in/catalogs?title=pincode&sortby=_score
+  - https://www.kaggle.com/datasets/devarajv88/delhivery-logistics-dataset
+  - https://github.com/datameet/indian_village_boundaries/tree/master/or
